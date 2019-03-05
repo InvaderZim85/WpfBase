@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>ZimLabs.WpfBase</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>0.0.1</version>
+
+        <title>ZimLabs.WpfBase</title>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Andreas Pouwels</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>Andreas Pouwels</owners>
+
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        
+        <!-- Any details about this particular release -->
+        <releaseNotes>New library to create wpf applications with MVVM</releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>Library to create wpf applications with the MVVM pattern.</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2019 Andreas Pouwels</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>wpf utility base core</tags>
+    </metadata>
+    <files>
+        <file src="..\bin\Release\*.*" target="lib\net472" exclude="**/*.pdb" />
+    </files>
+</package>
