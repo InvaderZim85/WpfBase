@@ -61,7 +61,7 @@ The xaml code
 <Window
     xmlns:local="clr-namespace:Project.Ui">
     <Window.DataContext>
-        <local:MainWindowViewModel>
+        <local:MainWindowViewModel />
     </Window.DataContext>
     <Grid>
         <Button 
@@ -94,7 +94,7 @@ public namespace Project.UI
     public class MainWindowViewModel : ObservableObject
     {
         // Relay command with additional parameters
-        public ICommand SaveCommand => new RelayCommand<SaveType.List>(Save);
+        public ICommand SaveCommand => new RelayCommand<SaveType>(Save);
 
         // Delegate command
         public ICommand LoadCommand => new DelegateCommand(LoadData);
