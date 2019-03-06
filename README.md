@@ -52,8 +52,9 @@ public class MainWindowViewModel : ObservableObject
 }
 ```
 
-### RelayCommand
-With the *RelayCommand* you can provide parameters to a method.
+### Command
+With the *DelegateCommand* and the the *RelayCommand* you can bind a command from the view model to the view. 
+The relay command provides the possibility to add parameters.
 
 The xaml code
 ```xml
